@@ -1,0 +1,77 @@
+object fraSelect: TfraSelect
+  Left = 0
+  Top = 0
+  Width = 337
+  Height = 257
+  HorzScrollBar.Range = 329
+  VertScrollBar.Range = 257
+  TabOrder = 0
+  object lblInfo: TLabel
+    Left = 8
+    Top = 8
+    Width = 321
+    Height = 25
+    AutoSize = False
+    Caption = 'Select the profile you want to backup:'
+    Masked = True
+    Transparent = True
+  end
+  object lsProfiles: TListBox
+    Left = 8
+    Top = 32
+    Width = 321
+    Height = 97
+    TabOrder = 1
+  end
+  object cmdRefresh: TButton
+    Left = 8
+    Top = 136
+    Width = 81
+    Height = 25
+    Caption = 'Refresh'
+    TabOrder = 2
+  end
+  object cmdNewProfile: TButton
+    Left = 248
+    Top = 136
+    Width = 81
+    Height = 25
+    Caption = 'New Profile'
+    Enabled = False
+    TabOrder = 3
+  end
+  object lblSelect: TLabel
+    Left = 8
+    Top = 176
+    Width = 313
+    Height = 33
+    AutoSize = False
+    Caption = 'Then select the location of the backup file:'
+    WordWrap = True
+  end
+  object fraSelect: TGroupBox
+    Left = 8
+    Top = 208
+    Width = 321
+    Height = 49
+    Caption = 'Select file'
+    TabOrder = 5
+    object lblPath: TLabel
+      Left = 8
+      Top = 22
+      Width = 217
+      Height = 17
+      AutoSize = False
+      Masked = True
+      Transparent = True
+    end
+    object cmdBrowse: TButton
+      Left = 232
+      Top = 16
+      Width = 81
+      Height = 25
+      Caption = 'Browse...'
+      TabOrder = 1
+    end
+  end
+end

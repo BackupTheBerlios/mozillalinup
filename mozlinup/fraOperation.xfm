@@ -1,0 +1,52 @@
+object Operation: TOperation
+  Left = 0
+  Top = 0
+  Width = 337
+  Height = 257
+  HorzScrollBar.Range = 329
+  VertScrollBar.Range = 257
+  TabOrder = 0
+  object lblChoose: TLabel
+    Left = 8
+    Top = 8
+    Width = 237
+    Height = 20
+    Caption = 'Choose the operation you want to perform.'
+  end
+  object fraOperation: TRadioGroup
+    Left = 8
+    Top = 32
+    Width = 321
+    Height = 57
+    Items.Strings = (
+      'Backup a profile'
+      'Restore a profile')
+    Caption = 'Option'
+    Color = clButton
+    Columns = 2
+    ParentColor = False
+    TabOrder = 1
+  end
+  object lblInfo: TLabel
+    Left = 8
+    Top = 104
+    Width = 313
+    Height = 57
+    AutoSize = False
+    Caption = 
+      'It is possible to backup or restore Mozilla user profile(s) of t' +
+      'he following application(s).'
+    Masked = True
+    Transparent = True
+    WordWrap = True
+  end
+  object fraPrograms: TListBox
+    Left = 8
+    Top = 168
+    Width = 321
+    Height = 89
+    Items.Strings = (
+      'No program was found')
+    TabOrder = 3
+  end
+end

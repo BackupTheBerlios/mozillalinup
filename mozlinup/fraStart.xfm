@@ -1,0 +1,64 @@
+object Frame1: TFrame1
+  Left = 0
+  Top = 0
+  Width = 337
+  Height = 240
+  AutoScroll = False
+  TabOrder = 0
+  object lblWelcome: TLabel
+    Left = 8
+    Top = 8
+    Width = 215
+    Height = 29
+    Caption = 'Welcome to MozBackUp'
+    Font.Color = clBlack
+    Font.Height = 21
+    Font.Name = 'Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    Masked = True
+    ParentFont = False
+    Transparent = True
+  end
+  object lblIntro: TLabel
+    Left = 8
+    Top = 40
+    Width = 321
+    Height = 41
+    AutoSize = False
+    Caption = 
+      'This wizard will help you to backup or restore your Mozilla user' +
+      ' profile.'
+    Font.Color = clBlack
+    Font.Height = 12
+    Font.Name = 'Sans Serif'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    Masked = True
+    ParentFont = False
+    Transparent = True
+    WordWrap = True
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 88
+    Width = 321
+    Height = 41
+    AutoSize = False
+    Caption = 
+      'It is strongly recomended that you exist all programs that can b' +
+      'e mainipulated with your Mozilla user profile.'
+    Masked = True
+    Transparent = True
+    WordWrap = True
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 144
+    Width = 321
+    Height = 41
+    AutoSize = False
+    Caption = 'Click Cancel to quit the program. Click next to continue.'
+    WordWrap = True
+  end
+end
