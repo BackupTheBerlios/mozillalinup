@@ -18,10 +18,12 @@ type
     fraOperation: TOperation;
     cmdThree: TButton;
     fraSelect1: TfraSelect;
+    Save: TSaveDialog;
     procedure cmdTwoClick(Sender: TObject);
     procedure cmdOneClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure fraSelect1cmdRefreshClick(Sender: TObject);
+    procedure fraSelect1cmdBrowseClick(Sender: TObject);
   private
     { Private-Deklarationen }
   public
@@ -40,6 +42,7 @@ var
   Dirs: ProgramDirs;
   ProgSelect: String;
   SavePath: String;
+  ProfilePath: String;
 
 implementation
 
@@ -56,8 +59,6 @@ begin
 end;
 
 procedure TMain.cmdOneClick(Sender: TObject);
-var
- Funktionen: Tfunctions;
 begin
 if(fraWelcome.Visible) then
  begin
@@ -74,52 +75,44 @@ if(fraOperation.Visible) then
   fraSelect1.Visible:=true;
 
   ProgSelect:=fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex];
-  if(length(GetEnvironmentVariable('HOME') + '/' + ProgSelect + '.pcv')>=25) then
-   begin
-    SavePath:=GetEnvironmentVariable('HOME') + '/' + ProgSelect + '.pcv';
-    fraSelect1.lblPath.Caption:='...' + Copy(SavePath,length(SavePath)-25,length(SavePath));
-   end;
-
-  // Profile ermitteln
-  Funktionen:=tfunctions.create;
+  SavePath:=GetEnvironmentVariable('HOME') + '/' + ProgSelect + '.pcv';
+  fraSelect1.lblPath.Caption:=functions.shortpath(SavePath);
 
   // Mozilla
   if(fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex]='Mozilla') then
    begin
-    Funktionen.GetProfiles(Dirs.MozillaDir);
+    functions.GetProfiles(Dirs.MozillaDir);
+    ProfilePath:=Dirs.MozillaDir;
    end;
 
   // Mozilla
   if(fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex]='Mozilla Firefox') then
    begin
-    Funktionen.GetProfiles(Dirs.FirefoxDir);
+    functions.GetProfiles(Dirs.FirefoxDir);
+    ProfilePath:=Dirs.FirefoxDir;
    end;
 
   // Mozilla
   if(fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex]='Mozilla Thunderbird') then
    begin
-    Funktionen.GetProfiles(Dirs.ThunderbirdDir);
+    functions.GetProfiles(Dirs.ThunderbirdDir);
+    ProfilePath:=Dirs.ThunderbirdDir;
    end;
-
-  Funktionen.Free;
-  exit;
  end;
 end;
 
 procedure TMain.FormCreate(Sender: TObject);
 var
- Funktionen: Tfunctions;
  LoadLang: Tlanguage;
 begin
 // Sprache Laden
 LoadLang:=Tlanguage.create;
 LoadLang.LoadLanguage(ExtractFilePath(Application.ExeName)+'/lang/Default.lng');
 
-Funktionen:=Tfunctions.Create;
 // Verzeichnisse ermitteln
-Dirs.MozillaDir:=Funktionen.GetMozillaDir;
-Dirs.FirefoxDir:=Funktionen.GetFirefoxDir;
-Dirs.ThunderbirdDir:=Funktionen.GetThunderbirdDir;
+Dirs.MozillaDir:=functions.GetMozillaDir;
+Dirs.FirefoxDir:=functions.GetFirefoxDir;
+Dirs.ThunderbirdDir:=functions.GetThunderbirdDir;
 
 // In Liste Einfügen
 if(Dirs.MozillaDir<>'') then
@@ -134,36 +127,19 @@ if(fraOperation.fraPrograms.Items.Count=-1) then
  fraOperation.fraPrograms.Items.Add('No program was found');
 end;
 
+// Profile aktualisieren
 procedure TMain.fraSelect1cmdRefreshClick(Sender: TObject);
-var
- Funktionen: Tfunctions;
 begin
-// Profile Aktualisieren (Refresh Profiles)
-// Alte Einträge Löschen
-fraOperation.fraPrograms.Items.Clear;
+functions.GetProfiles(ProfilePath+'/');
+end;
 
-// Profile ermitteln
-Funktionen:=tfunctions.create;
-
-// Mozilla
-if(fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex]='Mozilla') then
+procedure TMain.fraSelect1cmdBrowseClick(Sender: TObject);
+begin
+// Datei Speichern unter (Save file as)
+if(Save.Execute) then
  begin
-  Funktionen.GetProfiles(Dirs.MozillaDir);
-  exit;
- end;
-
-// Mozilla
-if(fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex]='Mozilla Firefox') then
- begin
-  Funktionen.GetProfiles(Dirs.FirefoxDir);
-  exit;
- end;
-
-// Mozilla
-if(fraOperation.fraPrograms.Items.Strings[fraOperation.fraPrograms.itemindex]='Mozilla Thunderbird') then
- begin
-  Funktionen.GetProfiles(Dirs.ThunderbirdDir);
-  exit;
+  SavePath:=Save.Filename;
+  fraSelect1.lblPath.Caption:=functions.shortpath(SavePath);
  end;
 end;
 

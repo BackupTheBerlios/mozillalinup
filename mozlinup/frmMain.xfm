@@ -11,7 +11,6 @@ object Main: TMain
   FormStyle = fsStayOnTop
   Position = poScreenCenter
   Scaled = False
-  WindowState = wsMinimized
   OnCreate = FormCreate
   PixelsPerInch = 84
   object imgLeft: TImage
@@ -2981,6 +2980,20 @@ object Main: TMain
       inherited lblPath: TLabel
         Height = 20
       end
+      inherited cmdBrowse: TButton
+        OnClick = fraSelect1cmdBrowseClick
+      end
     end
+  end
+  object Save: TSaveDialog
+    DefaultExt = '*.pcv'
+    Filter = 'MozillaLinUp / MozBackUp|*.pcv'
+    FilterIndex = 0
+    Options = [ofOverwritePrompt, ofPathMustExist, ofEnableSizing, ofHideReadOnly]
+    Height = 0
+    Title = 'Wo soll das Backup gespeichert werden?'
+    Width = 0
+    Left = 16
+    Top = 296
   end
 end

@@ -1,7 +1,7 @@
 unit functions;
 
 // **********************************************
-// K L A S S E : functions
+// UNIT : functions
 // ----------------------------------------------
 // Version  : 0.1
 // Autor    : Andre Hauke
@@ -14,19 +14,16 @@ unit functions;
 interface
 
 uses
- SysUtils, QDialogs, Classes;
+ SysUtils, QDialogs, Classes, ZLib;
 
-type
-  Tfunctions = class(TObject)
-  private
-  public
-   function GetMozillaDir():String;
-   function GetFirefoxDir():String;
-   function GetThunderbirdDir():String;
-   procedure GetProfiles(Path: String);
-   Procedure FileCopy(Const FromFile, ToFile: String);
-   constructor create;
-end;
+ function GetMozillaDir():String;
+ function GetFirefoxDir():String;
+ function GetThunderbirdDir():String;
+ procedure GetProfiles(Path: String);
+ Procedure FileCopy(Const FromFile, ToFile: String);
+ procedure Compress(InputFileName, OutputFileName: string);
+ procedure Decompress(InputFileName, OutputFileName: string);
+ function ShortPath(Text: String):String;
 
 var
  sHomeDir: String;
@@ -35,15 +32,10 @@ implementation
 
 uses
  frmMain;
-
-// Home Verzeichnis ermitteln (Get Home Dir)
-constructor Tfunctions.create;
-begin
-sHomeDir:=GetEnvironmentVariable('HOME');
-end;
+ 
 
 // Mozilla Verzeichnis ermitteln (Get Mozilla Dir)
-function Tfunctions.GetMozillaDir():String;
+function GetMozillaDir():String;
 begin
  // Existiert das Verzeichnis (Exist the dir)
  if(DirectoryExists(sHomeDir + '/.mozilla')) then
@@ -51,7 +43,7 @@ begin
 end;
 
 // Mozilla Firefox Verzeichnis ermitteln (Get Mozilla Firefox Dir)
-function Tfunctions.GetFirefoxDir():String;
+function GetFirefoxDir():String;
 begin
  // Existiert das Verzeichnis (Exist the dir)
  if(DirectoryExists(sHomeDir + '/.phoenix')) then
@@ -59,7 +51,7 @@ begin
 end;
 
 // Mozilla Thunderbird Verzeichnis ermitteln (Get Mozilla Thunderbird Dir)
-function Tfunctions.GetThunderbirdDir():String;
+function GetThunderbirdDir():String;
 begin
  // Existiert das Verzeichnis (Exist the dir)
  if(DirectoryExists(sHomeDir + '/.thunderbird')) then
@@ -67,12 +59,12 @@ begin
 end;
 
 // Vorhandene Profile ermitteln (Get Profiles)
-procedure Tfunctions.GetProfiles(Path: String);
+procedure GetProfiles(Path: String);
 var
  SR: TSearchRec;
- sPTemp: String;
 begin
   with Main.fraSelect1 do begin
+   lsProfiles.Items.Clear;
    if Path[Length(Path)]<>'/' then Path:=Path+'/';
     if FindFirst(Path+'*',faDirectory,SR)=0 then Begin
       repeat
@@ -81,7 +73,7 @@ begin
             //Eintrag ist ein Verzeichnis
             if (SR.Attr and faDirectory > 0) then
              if(SR.Name<>'plugins') then lsProfiles.Items.Add(SR.name);
-        End;
+        end;
       until FindNext(SR)<>0;
       FindClose(SR); //Nach jedem findfirst nötig, um sr freizugeben!
     End;
@@ -89,7 +81,7 @@ begin
 end;
 
 // Eine Datei kopieren (Copy a file)
-Procedure Tfunctions.FileCopy(Const FromFile, ToFile: String);
+Procedure FileCopy(Const FromFile, ToFile: String);
 Var
   S, T: TFileStream;
 Begin
@@ -100,6 +92,75 @@ Begin
     end;
   finally S.Free;
   end;
-End;
+end;
+
+// Packen
+procedure Compress(InputFileName, OutputFileName: string);
+var InputStream, OutputStream: TFileStream;
+  CompressionStream: zlib.TCompressionStream;
+begin
+  InputStream:=TFileStream.Create(InputFileName, fmOpenRead);
+  try
+    OutputStream:=TFileStream.Create(OutputFileName, fmCreate);
+    try
+      CompressionStream:=zlib.TCompressionStream.Create(clMax, OutputStream);
+      try
+        CompressionStream.CopyFrom(InputStream, InputStream.Size);
+      finally
+        CompressionStream.Free;
+      end;
+    finally
+      OutputStream.Free;
+    end;
+  finally
+    InputStream.Free;
+  end;
+end;
+
+// Entpacken
+procedure Decompress(InputFileName, OutputFileName: string);
+var InputStream, OutputStream: TFileStream;
+  DeCompressionStream: ZLib.TDeCompressionStream;
+  Buf: array[0..4095] of Byte;
+  Count: Integer;
+begin
+  InputStream:=TFileStream.Create(InputFileName, fmOpenRead);
+  try
+    OutputStream:=TFileStream.Create(OutputFileName, fmCreate);
+    try
+      DecompressionStream := TDecompressionStream.Create(InputStream);
+      try
+        while true do
+        begin
+          Count := DecompressionStream.Read(Buf[0], SizeOf(Buf));
+          if Count = 0 then
+            break
+          else
+            OutputStream.Write(Buf[0], Count);
+        end;
+      finally
+        DecompressionStream.Free;
+      end;
+    finally
+      OutputStream.Free;
+    end;
+  finally
+    InputStream.Free;
+  end;
+end;
+
+// Verzeichnis abkürzen (Short Path)
+function ShortPath(Text: String):String;
+begin
+if(length(Text)>=25) then
+ ShortPath:='...' + Copy(Text,length(Text)-25,length(Text))
+else
+ ShortPath:=Text;
+end;
+
+initialization
+sHomeDir:=GetEnvironmentVariable('HOME');
+finalization
+sHomeDir:='';
 
 end.
