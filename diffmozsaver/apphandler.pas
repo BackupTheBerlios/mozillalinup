@@ -203,7 +203,7 @@ for i:=0 to high(AppDataInfo) do
       else
        Result:=false;
      finally
-      sTempFiles.Free;
+      sTemp.Free;
      end;
     {$Else}
      AProcess:=TProcess.Create(nil);
