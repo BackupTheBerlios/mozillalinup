@@ -138,8 +138,8 @@ procedure GetFiles(const Directory: string; var Files: TStringList;
 var
  SearchRec: TSearchRec;
 begin
-  if(FindFirst(IncludeTrailingPathDelimiter(Directory)+FileMask, faAnyFile and
-  not faDirectory and not faVolumeID, SearchRec) = 0) then
+  if(FindFirst(IncludeTrailingPathDelimiter(Directory)+FileMask, faAnyFile,
+  SearchRec) = 0) then
   begin
    try
     repeat
@@ -157,7 +157,7 @@ begin
     begin
      try
       repeat
-       if((SearchRec.Attr and faDirectory) <> 0) then
+       if((SearchRec.Attr and faAnyFile) <> 0) then
         begin
          if((SearchRec.Name <> '.') and (SearchRec.Name <> '..')) then
           GetFiles(IncludeTrailingPathDelimiter(Directory)+SearchRec.Name,

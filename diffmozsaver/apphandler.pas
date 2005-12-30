@@ -194,14 +194,13 @@ begin
 AppDataInfo:=GetAvailibleApps;
 for i:=0 to high(AppDataInfo) do
  begin
-  //break;
   if(AppDataInfo[i].Name='Mozilla Firefox') then
    begin
     // Prüfen
     {$IfDef Win32}
      sTemp:=TStringList.Create;
      try
-      GetFiles(AppDataInfo[i].Path,sTemp,'*.lock',false);
+      GetFiles(AppDataInfo[i].Path,sTemp,'*.lock',true);
       if(sTemp.Count>0) then
        Result:=true
       else
