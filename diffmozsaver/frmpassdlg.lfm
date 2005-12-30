@@ -1,0 +1,85 @@
+object PassDlg: TPassDlg
+  BorderStyle = bsDialog
+  Caption = 'DiffMozSaver - Passwort festlegen'
+  ClientHeight = 146
+  ClientWidth = 298
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  Position = poOwnerFormCenter
+  HorzScrollBar.Page = 297
+  VertScrollBar.Page = 145
+  Left = 401
+  Height = 146
+  Top = 269
+  Width = 298
+  object fraPassword: TGroupBox
+    Caption = 'Passwort festlegen'
+    ClientHeight = 78
+    ClientWidth = 278
+    ParentColor = True
+    TabOrder = 0
+    Left = 8
+    Height = 96
+    Top = 8
+    Width = 282
+    object lblPass1: TLabel
+      Caption = 'Passwort:'
+      Color = clNone
+      Left = 6
+      Height = 13
+      Width = 48
+    end
+    object lblPass2: TLabel
+      BorderSpacing.OnChange = nil
+      Caption = 'Passwort wiederholung:'
+      Color = clNone
+      Left = 6
+      Height = 13
+      Top = 40
+      Width = 115
+    end
+    object Pass1: TEdit
+      PasswordChar = '#'
+      TabOrder = 0
+      Left = 6
+      Height = 17
+      Top = 16
+      Width = 264
+    end
+    object Pass2: TEdit
+      BorderSpacing.OnChange = nil
+      PasswordChar = '#'
+      TabOrder = 1
+      Left = 6
+      Height = 17
+      Top = 56
+      Width = 264
+    end
+  end
+  object cmdOk: TButton
+    Anchors = [akTop, akRight]
+    BorderSpacing.OnChange = nil
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Ok'
+    Default = True
+    OnClick = cmdOkClick
+    TabOrder = 1
+    Left = 72
+    Height = 30
+    Top = 109
+    Width = 105
+  end
+  object cmdAbort: TButton
+    Anchors = [akTop, akRight]
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Abbrechen'
+    OnClick = cmdAbortClick
+    TabOrder = 2
+    Left = 184
+    Height = 30
+    Top = 109
+    Width = 105
+  end
+end

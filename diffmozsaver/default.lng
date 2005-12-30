@@ -1,0 +1,58 @@
+##################################
+#   DiffMozSaver Language File   #
+#   Language: German             #
+#                                #
+#   Written by Andre Hauke       #
+#   a.hauke@different4all.de     #
+#                                #
+#   http://www.different4all.de  #
+##################################
+
+[Main]
+1=Willkommen bei DiffMozSaver!
+2=Dieses Programm erlaubt Ihnen, die Anwenderprofile von Mozilla-Anwendungen (Mozilla, Firefox, Thunderbird) inklusive aller Einstellungen zu sichern oder wiederherzustellen.
+3=Bitte beenden Sie alle Programme, die eine Datensicherung der Mozilla-Profile beeinflussen könnten.
+4=Klicken Sie auf 'Abbrechen' zum Beenden des Programms oder auf 'Weiter' um fortzufahren.
+5=Bitte wählen Sie die durchzuführende Aktion:
+6=Aktion
+7=Profil Sichern
+8=Profil wiederherstellen
+9=Sie können Profile der folgenden Anwendungen sichern bzw. wiederherstellen:
+10=Bitte wählen Sie das zu sichernde Profil:
+11=Bitte wählen Sie das widerherzustellende Profil:
+12=Aktualisieren
+13=Bitte wählen Sie die Backup-Ausgabedatei:
+14=Bitte wählen Sie die Wiederherstellungsdatei:
+15=Ausgabedatei
+16=Wiederherstellungsdatei
+17=Zurück
+18=Weiter
+19=Abbrechen
+20=Beenden
+
+[PassDlg]
+1=Passwort festlegen
+2=Passwort:
+3=Passwort wiederholung:
+4=Ok
+5=Abbrechen
+
+[MSG]
+1=Firefox wird derzeit ausgeführt. Bitte beenden Sie Firefox um fortzufahren.
+2=Thunderbird wird derzeit ausgeführt. Bitte beenden Sie Thunderbird um fortzufahren.
+3=Möchten Sie die Sicherungsdatei verschlüsseln?
+4=Wollen Sie wirklich abbrechen?
+5=Dieses Backup erfordert ein Passwort. Fortfahren?
+6=Passwort erforderlich
+7=Bitte Passwort eingeben:
+8=Die eingegebenen Passwörter sind nicht identisch!
+
+[Status]
+1=Kopiere...
+2=Erstelle Backup...
+3=Abgeschlossen.
+4=Entpacke...
+5=Abgebrochen.
+
+[Error]
+1=Fehler beim Kopieren.

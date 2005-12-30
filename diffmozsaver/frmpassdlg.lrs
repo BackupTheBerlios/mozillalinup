@@ -1,0 +1,26 @@
+{ Dies ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('TPassDlg','FORMDATA',[
+  'TPF0'#8'TPassDlg'#7'PassDlg'#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6'!Dif'
+  +'fMozSaver - Passwort festlegen'#12'ClientHeight'#3#146#0#11'ClientWidth'#3
+  +'*'#1#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7#11'FormDestroy'#6'OnShow'#7
+  +#8'FormShow'#13'PixelsPerInch'#2'`'#8'Position'#7#17'poOwnerFormCenter'#18'H'
+  +'orzScrollBar.Page'#3')'#1#18'VertScrollBar.Page'#3#145#0#4'Left'#3#145#1#6
+  +'Height'#3#146#0#3'Top'#3#13#1#5'Width'#3'*'#1#0#9'TGroupBox'#11'fraPassword'
+  +#7'Caption'#6#18'Passwort festlegen'#12'ClientHeight'#2'N'#11'ClientWidth'#3
+  +#22#1#11'ParentColor'#9#8'TabOrder'#2#0#4'Left'#2#8#6'Height'#2'`'#3'Top'#2#8
+  +#5'Width'#3#26#1#0#6'TLabel'#8'lblPass1'#7'Caption'#6#9'Passwort:'#5'Color'#7
+  +#6'clNone'#4'Left'#2#6#6'Height'#2#13#5'Width'#2'0'#0#0#6'TLabel'#8'lblPass2'
+  +#22'BorderSpacing.OnChange'#13#7'Caption'#6#22'Passwort wiederholung:'#5'Col'
+  +'or'#7#6'clNone'#4'Left'#2#6#6'Height'#2#13#3'Top'#2'('#5'Width'#2's'#0#0#5
+  +'TEdit'#5'Pass1'#12'PasswordChar'#6#1'#'#8'TabOrder'#2#0#4'Left'#2#6#6'Heigh'
+  +'t'#2#17#3'Top'#2#16#5'Width'#3#8#1#0#0#5'TEdit'#5'Pass2'#22'BorderSpacing.O'
+  +'nChange'#13#12'PasswordChar'#6#1'#'#8'TabOrder'#2#1#4'Left'#2#6#6'Height'#2
+  +#17#3'Top'#2'8'#5'Width'#3#8#1#0#0#0#7'TButton'#5'cmdOk'#7'Anchors'#11#5'akT'
+  +'op'#7'akRight'#0#22'BorderSpacing.OnChange'#13#25'BorderSpacing.InnerBorder'
+  +#2#2#7'Caption'#6#2'Ok'#7'Default'#9#7'OnClick'#7#10'cmdOkClick'#8'TabOrder'
+  +#2#1#4'Left'#2'H'#6'Height'#2#30#3'Top'#2'm'#5'Width'#2'i'#0#0#7'TButton'#8
+  +'cmdAbort'#7'Anchors'#11#5'akTop'#7'akRight'#0#25'BorderSpacing.InnerBorder'
+  +#2#2#7'Caption'#6#9'Abbrechen'#7'OnClick'#7#13'cmdAbortClick'#8'TabOrder'#2#2
+  +#4'Left'#3#184#0#6'Height'#2#30#3'Top'#2'm'#5'Width'#2'i'#0#0#0
+]);
