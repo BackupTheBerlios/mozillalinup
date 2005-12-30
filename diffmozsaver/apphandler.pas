@@ -123,25 +123,29 @@ sPath:=GetHomePath;
  end;
 {$Else}
  // Firefox
- if(DirectoryExists(IncludeTrailingPathDelimiter(sPath)+'.mozilla/firefox')) then
+ if(DirectoryExists(IncludeTrailingPathDelimiter(sPath)+
+ '.mozilla/firefox')) then
   begin
    if(high(Result)=-1) then
     SetLength(Result,1)
    else
     SetLength(Result,high(Result)+2);
    Result[high(Result)].Name:='Mozilla Firefox';
-   Result[high(Result)].Path:=IncludeTrailingPathDelimiter(sPath)+'.mozilla/firefox';
+   Result[high(Result)].Path:=IncludeTrailingPathDelimiter(sPath)+
+   '.mozilla/firefox';
    Result[high(Result)].AppType:=appFirefox;
   end;
  // Thunderbird
- if(DirectoryExists(IncludeTrailingPathDelimiter(sPath)+'.thunderbird')) then
+ if(DirectoryExists(IncludeTrailingPathDelimiter(sPath)+
+ '.mozilla-thunderbird')) then
   begin
    if(high(Result)=-1) then
     SetLength(Result,1)
    else
     SetLength(Result,high(Result)+2);
    Result[high(Result)].Name:='Mozilla Thunderbird';
-   Result[high(Result)].Path:=IncludeTrailingPathDelimiter(sPath)+'.thunderbird';
+   Result[high(Result)].Path:=IncludeTrailingPathDelimiter(sPath)+
+   '.mozilla-thunderbird';
    Result[high(Result)].AppType:=appThunderbird;
   end;
 {$EndIF}

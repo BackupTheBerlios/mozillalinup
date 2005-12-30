@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <CONFIG>
   <ProjectOptions>
-    <PathDelim Value="\"/>
+    <PathDelim Value="/"/>
     <Version Value="5"/>
     <General>
       <MainUnit Value="0"/>
@@ -32,53 +32,53 @@
         <UsageCount Value="67"/>
       </Unit1>
       <Unit2>
-        <CursorPos X="12" Y="206"/>
+        <CursorPos X="2" Y="127"/>
         <EditorIndex Value="1"/>
         <Filename Value="apphandler.pas"/>
         <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
-        <TopLine Value="194"/>
+        <TopLine Value="125"/>
         <UnitName Value="apphandler"/>
         <UsageCount Value="67"/>
       </Unit2>
       <Unit3>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="E:\Software\Lazarus\tmpack\tmpack\esdsound.pas"/>
+        <Filename Value="E:/Software/Lazarus/tmpack/tmpack/esdsound.pas"/>
         <TopLine Value="1"/>
         <UnitName Value="esdsound"/>
         <UsageCount Value="7"/>
       </Unit3>
       <Unit4>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="E:\Software\Lazarus\wizardntb\wizardntb\wizardnotebook.pas"/>
+        <Filename Value="E:/Software/Lazarus/wizardntb/wizardntb/wizardnotebook.pas"/>
         <TopLine Value="1"/>
         <UnitName Value="WizardNotebook"/>
         <UsageCount Value="7"/>
       </Unit4>
       <Unit5>
         <CursorPos X="39" Y="20"/>
-        <Filename Value="E:\Software\Projekte\DiffSimpleWrite\source\mainfunc.pas"/>
+        <Filename Value="E:/Software/Projekte/DiffSimpleWrite/source/mainfunc.pas"/>
         <TopLine Value="1"/>
         <UnitName Value="mainfunc"/>
         <UsageCount Value="7"/>
       </Unit5>
       <Unit6>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\packages\extra\winunits\shlobj.pp"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/packages/extra/winunits/shlobj.pp"/>
         <TopLine Value="1"/>
         <UnitName Value="shlobj"/>
         <UsageCount Value="7"/>
       </Unit6>
       <Unit7>
         <CursorPos X="5" Y="500"/>
-        <Filename Value="E:\Software\Projekte\X-Blocker\source\functions.pas"/>
+        <Filename Value="E:/Software/Projekte/X-Blocker/source/functions.pas"/>
         <TopLine Value="479"/>
         <UnitName Value="functions"/>
         <UsageCount Value="8"/>
       </Unit7>
       <Unit8>
         <CursorPos X="3" Y="17"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\objpas\sysutils\filutilh.inc"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/rtl/objpas/sysutils/filutilh.inc"/>
         <TopLine Value="24"/>
         <UsageCount Value="7"/>
       </Unit8>
@@ -92,7 +92,7 @@
       </Unit9>
       <Unit10>
         <CursorPos X="31" Y="24"/>
-        <Filename Value="E:\Software\Projekte\X-Blocker\source\frmFileAdd.pas"/>
+        <Filename Value="E:/Software/Projekte/X-Blocker/source/frmFileAdd.pas"/>
         <TopLine Value="1"/>
         <UnitName Value="frmFileAdd"/>
         <UsageCount Value="7"/>
@@ -106,7 +106,7 @@
       </Unit11>
       <Unit12>
         <CursorPos X="1" Y="204"/>
-        <Filename Value="E:\Software\Projekte\X-Blocker\source\frmDirAdd.pas"/>
+        <Filename Value="E:/Software/Projekte/X-Blocker/source/frmDirAdd.pas"/>
         <TopLine Value="193"/>
         <UnitName Value="frmDirAdd"/>
         <UsageCount Value="7"/>
@@ -232,7 +232,7 @@
       </Unit29>
       <Unit30>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\win32\windows.pp"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/rtl/win32/windows.pp"/>
         <TopLine Value="1"/>
         <UnitName Value="windows"/>
         <UsageCount Value="7"/>
@@ -253,88 +253,88 @@
       </Unit32>
       <Unit33>
         <CursorPos X="43" Y="1428"/>
-        <Filename Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\abutils.pas"/>
+        <Filename Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/abutils.pas"/>
         <TopLine Value="1411"/>
         <UnitName Value="AbUtils"/>
         <UsageCount Value="7"/>
       </Unit33>
       <Unit34>
         <CursorPos X="12" Y="365"/>
-        <Filename Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\abzipper.pas"/>
+        <Filename Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/abzipper.pas"/>
         <TopLine Value="359"/>
         <UnitName Value="AbZipper"/>
         <UsageCount Value="7"/>
       </Unit34>
       <Unit35>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\types.pp"/>
+        <Filename Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/types.pp"/>
         <TopLine Value="11"/>
         <UnitName Value="types"/>
         <UsageCount Value="7"/>
       </Unit35>
       <Unit36>
         <CursorPos X="24" Y="26"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\lcl\ComCtrls.pp"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/lcl/ComCtrls.pp"/>
         <TopLine Value="14"/>
         <UnitName Value="ComCtrls"/>
         <UsageCount Value="7"/>
       </Unit36>
       <Unit37>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\packages\extra\zlib\zlib.pp"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/packages/extra/zlib/zlib.pp"/>
         <TopLine Value="111"/>
         <UnitName Value="zlib"/>
         <UsageCount Value="7"/>
       </Unit37>
       <Unit38>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\AbDefine.inc"/>
+        <Filename Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/AbDefine.inc"/>
         <TopLine Value="26"/>
         <UsageCount Value="7"/>
       </Unit38>
       <Unit39>
         <CursorPos X="29" Y="118"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\inc\objpash.inc"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/rtl/inc/objpash.inc"/>
         <TopLine Value="176"/>
         <UsageCount Value="7"/>
       </Unit39>
       <Unit40>
         <CursorPos X="46" Y="96"/>
-        <Filename Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\AbZBrows.pas"/>
+        <Filename Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/AbZBrows.pas"/>
         <TopLine Value="84"/>
         <UnitName Value="AbZBrows"/>
         <UsageCount Value="7"/>
       </Unit40>
       <Unit41>
         <CursorPos X="3" Y="256"/>
-        <Filename Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\AbArcTyp.pas"/>
+        <Filename Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/AbArcTyp.pas"/>
         <TopLine Value="1889"/>
         <UnitName Value="AbArcTyp"/>
         <UsageCount Value="7"/>
       </Unit41>
       <Unit42>
         <CursorPos X="3" Y="741"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\lcl\StdCtrls.pp"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/lcl/StdCtrls.pp"/>
         <TopLine Value="728"/>
         <UnitName Value="StdCtrls"/>
         <UsageCount Value="7"/>
       </Unit42>
       <Unit43>
         <CursorPos X="11" Y="568"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\inc\systemh.inc"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/rtl/inc/systemh.inc"/>
         <TopLine Value="556"/>
         <UsageCount Value="9"/>
       </Unit43>
       <Unit44>
         <CursorPos X="1" Y="1"/>
-        <Filename Value="E:\Software\Projekte\X-Blocker\source\frmRelDir.pas"/>
+        <Filename Value="E:/Software/Projekte/X-Blocker/source/frmRelDir.pas"/>
         <TopLine Value="82"/>
         <UnitName Value="frmRelDir"/>
         <UsageCount Value="9"/>
       </Unit44>
       <Unit45>
         <CursorPos X="3" Y="55"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\lcl\Controls.pp"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/lcl/Controls.pp"/>
         <TopLine Value="42"/>
         <UnitName Value="Controls"/>
         <UsageCount Value="9"/>
@@ -359,7 +359,7 @@
       </Unit47>
       <Unit48>
         <CursorPos X="3" Y="201"/>
-        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\objpas\sysutils\sysutilh.inc"/>
+        <Filename Value="C:/Programme/3dpack/lazarus/fpcsrc/rtl/objpas/sysutils/sysutilh.inc"/>
         <TopLine Value="189"/>
         <UsageCount Value="10"/>
       </Unit48>
@@ -373,13 +373,13 @@
       </Unit49>
       <Unit50>
         <CursorPos X="3" Y="59"/>
-        <Filename Value="\home\andre\fpc\rtl\objpas\sysutils\filutilh.inc"/>
+        <Filename Value="home/andre/fpc/rtl/objpas/sysutils/filutilh.inc"/>
         <TopLine Value="31"/>
         <UsageCount Value="10"/>
       </Unit50>
       <Unit51>
         <CursorPos X="1" Y="2"/>
-        <Filename Value="\home\andre\fpc\rtl\unix\sysutils.pp"/>
+        <Filename Value="home/andre/fpc/rtl/unix/sysutils.pp"/>
         <TopLine Value="1"/>
         <UnitName Value="sysutils"/>
         <UsageCount Value="10"/>
@@ -387,7 +387,6 @@
     </Units>
     <PublishOptions>
       <Version Value="2"/>
-      <DestinationDirectory Value="$(TestDir)\publishedproject\"/>
       <IgnoreBinaries Value="False"/>
       <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
       <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
@@ -395,7 +394,7 @@
     <RunParams>
       <local>
         <FormatVersion Value="1"/>
-        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
     <RequiredPackages Count="2">
@@ -407,23 +406,13 @@
         <MinVersion Major="1" Valid="True"/>
       </Item2>
     </RequiredPackages>
-    <JumpHistory Count="2" HistoryIndex="1">
-      <Position1>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="18" Column="11" TopLine="1"/>
-      </Position1>
-      <Position2>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="206" Column="7" TopLine="194"/>
-      </Position2>
-    </JumpHistory>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="5"/>
-    <PathDelim Value="\"/>
     <SearchPaths>
-      <OtherUnitFiles Value="E:\Software\Lazarus\fparchive-0.1\fparchive-0.1\;\home\andre\Programmierung\Komponenten\fparchive-0.1\"/>
-      <SrcPath Value="$(LazarusDir)\lcl\;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)\"/>
+      <OtherUnitFiles Value="E:/Software/Lazarus/fparchive-0.1/fparchive-0.1/;/home/andre/Programmierung/Komponenten/fparchive-0.1/"/>
+      <SrcPath Value="$(LazarusDir)/lcl/;$(LazarusDir)/lcl/interfaces/$(LCLWidgetType)/"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
@@ -447,7 +436,7 @@
   <Debugging>
     <BreakPoints Count="1">
       <Item1>
-        <Source Value="C:\Program Files\Quark\glscenedemo3\obsplighting.pas"/>
+        <Source Value="C:/Program Files/Quark/glscenedemo3/obsplighting.pas"/>
         <Line Value="688"/>
       </Item1>
     </BreakPoints>
