@@ -6,7 +6,7 @@ object PassDlg: TPassDlg
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnShow = FormShow
-  PixelsPerInch = 96
+  PixelsPerInch = 104
   Position = poOwnerFormCenter
   HorzScrollBar.Page = 297
   VertScrollBar.Page = 145
@@ -15,8 +15,9 @@ object PassDlg: TPassDlg
   Top = 269
   Width = 298
   object fraPassword: TGroupBox
+    BorderSpacing.OnChange = nil
     Caption = 'Passwort festlegen'
-    ClientHeight = 78
+    ClientHeight = 75
     ClientWidth = 278
     ParentColor = True
     TabOrder = 0
@@ -25,6 +26,7 @@ object PassDlg: TPassDlg
     Top = 8
     Width = 282
     object lblPass1: TLabel
+      BorderSpacing.OnChange = nil
       Caption = 'Passwort:'
       Color = clNone
       Left = 6
@@ -32,7 +34,6 @@ object PassDlg: TPassDlg
       Width = 48
     end
     object lblPass2: TLabel
-      BorderSpacing.OnChange = nil
       Caption = 'Passwort wiederholung:'
       Color = clNone
       Left = 6
@@ -41,6 +42,7 @@ object PassDlg: TPassDlg
       Width = 115
     end
     object Pass1: TEdit
+      BorderSpacing.OnChange = nil
       PasswordChar = '#'
       TabOrder = 0
       Left = 6
@@ -49,7 +51,6 @@ object PassDlg: TPassDlg
       Width = 264
     end
     object Pass2: TEdit
-      BorderSpacing.OnChange = nil
       PasswordChar = '#'
       TabOrder = 1
       Left = 6
@@ -60,7 +61,6 @@ object PassDlg: TPassDlg
   end
   object cmdOk: TButton
     Anchors = [akTop, akRight]
-    BorderSpacing.OnChange = nil
     BorderSpacing.InnerBorder = 2
     Caption = 'Ok'
     Default = True
@@ -73,6 +73,7 @@ object PassDlg: TPassDlg
   end
   object cmdAbort: TButton
     Anchors = [akTop, akRight]
+    BorderSpacing.OnChange = nil
     BorderSpacing.InnerBorder = 2
     Caption = 'Abbrechen'
     OnClick = cmdAbortClick

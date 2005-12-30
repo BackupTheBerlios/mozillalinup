@@ -242,6 +242,7 @@ object Main: TMain
   Width = 450
   object panAction: TPanel
     Align = alBottom
+    BorderSpacing.OnChange = nil
     BevelInner = bvRaised
     BevelOuter = bvNone
     ClientHeight = 40
@@ -253,6 +254,7 @@ object Main: TMain
     Width = 450
     object cmdNext: TButton
       Anchors = [akTop, akRight]
+      BorderSpacing.OnChange = nil
       BorderSpacing.InnerBorder = 2
       Caption = 'Weiter'
       Font.Height = -13
@@ -265,7 +267,6 @@ object Main: TMain
     end
     object cmdAbort: TButton
       Anchors = [akTop, akRight]
-      BorderSpacing.OnChange = nil
       BorderSpacing.InnerBorder = 2
       Caption = 'Abbrechen'
       Font.Height = -13
@@ -278,7 +279,6 @@ object Main: TMain
     end
     object cmdBack: TButton
       Anchors = [akTop, akRight]
-      BorderSpacing.OnChange = nil
       BorderSpacing.InnerBorder = 2
       Caption = 'Zurück'
       Font.Height = -13
@@ -294,6 +294,7 @@ object Main: TMain
   object pMain: TNotebook
     Align = alClient
     Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.OnChange = nil
     PageIndex = 2
     ShowTabs = False
     Height = 310
@@ -308,6 +309,7 @@ object Main: TMain
       Width = 446
       object lblWelcome: TLabel
         AutoSize = False
+        BorderSpacing.OnChange = nil
         Caption = 'Willkommen bei DiffMozSaver!'
         Color = clNone
         Font.Height = -15
@@ -320,6 +322,7 @@ object Main: TMain
       end
       object lblInfo: TLabel
         AutoSize = False
+        BorderSpacing.OnChange = nil
         Caption = 'Dieses Programm erlaubt Ihnen, die Anwenderprofile von Mozilla-Anwendungen (Mozilla, Firefox, Thunderbird) inklusive aller Einstellungen zu sichern oder wiederherzustellen.'
         Color = clNone
         Font.Height = -13
@@ -331,6 +334,7 @@ object Main: TMain
       end
       object lblInfo2: TLabel
         AutoSize = False
+        BorderSpacing.OnChange = nil
         Caption = 'Bitte beenden Sie alle Programme, die eine Datensicherung der Mozilla-Profile beeinflussen könnten.'
         Color = clNone
         Font.Height = -13
@@ -342,6 +346,7 @@ object Main: TMain
       end
       object lblNextActionInfo: TLabel
         AutoSize = False
+        BorderSpacing.OnChange = nil
         Caption = 'Klicken Sie auf "Abbrechen" zum Beenden des Programms oder auf "Weiter" um fortzufahren.'
         Color = clNone
         Font.Height = -13
@@ -352,6 +357,7 @@ object Main: TMain
       end
       object panLeft: TPanel
         Align = alLeft
+        BorderSpacing.OnChange = nil
         BevelInner = bvSpace
         BevelOuter = bvSpace
         ClientHeight = 306
@@ -362,6 +368,7 @@ object Main: TMain
         Width = 154
         object imgLeft: TImage
           Align = alClient
+          BorderSpacing.OnChange = nil
           Center = True
           Picture.Data = {
             1754506F727461626C654E6574776F726B47726170686963CA32000089504E47
@@ -792,6 +799,7 @@ object Main: TMain
       Width = 446
       object lblAktion: TLabel
         AutoSize = False
+        BorderSpacing.OnChange = nil
         Caption = 'Bitte wählen Sie die duchzuführende Aktion:'
         Color = clNone
         Font.Height = -13
@@ -802,6 +810,7 @@ object Main: TMain
       end
       object lblSupportedApps: TLabel
         AutoSize = False
+        BorderSpacing.OnChange = nil
         Caption = 'Sie können Profile der folgenden Anwendungen sichern bzw. wiederherstellen:'
         Color = clNone
         Font.Height = -13
@@ -813,7 +822,6 @@ object Main: TMain
       end
       object panLeft1: TPanel
         Align = alLeft
-        BorderSpacing.OnChange = nil
         BevelInner = bvSpace
         BevelOuter = bvSpace
         ClientHeight = 306
@@ -824,7 +832,6 @@ object Main: TMain
         Width = 154
         object imgLeft1: TImage
           Align = alClient
-          BorderSpacing.OnChange = nil
           Center = True
           Picture.Data = {
             1754506F727461626C654E6574776F726B47726170686963CA32000089504E47
@@ -1246,6 +1253,7 @@ object Main: TMain
       end
       object fraAction: TRadioGroup
         Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.OnChange = nil
         Caption = 'Aktion'
         ItemIndex = 0
         Items.Strings = (
@@ -1260,6 +1268,7 @@ object Main: TMain
       end
       object lsSupportedApps: TListBox
         Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.OnChange = nil
         Font.Height = -13
         OnClick = lsSupportedAppsClick
         TabOrder = 2
@@ -1280,7 +1289,6 @@ object Main: TMain
       Width = 446
       object lblSelProfile: TLabel
         AutoSize = False
-        BorderSpacing.OnChange = nil
         Caption = 'Bitte wählen Sie das zu sichernde Profil:'
         Color = clNone
         Font.Height = -13
@@ -1291,7 +1299,6 @@ object Main: TMain
       end
       object lblBackupPath: TLabel
         AutoSize = False
-        BorderSpacing.OnChange = nil
         Color = clNone
         Font.Height = -13
         Left = 164
@@ -1301,6 +1308,7 @@ object Main: TMain
       end
       object panLeft2: TPanel
         Align = alLeft
+        BorderSpacing.OnChange = nil
         BevelInner = bvSpace
         BevelOuter = bvSpace
         ClientHeight = 306
@@ -1311,6 +1319,7 @@ object Main: TMain
         Width = 154
         object imgLeft2: TImage
           Align = alClient
+          BorderSpacing.OnChange = nil
           Center = True
           Picture.Data = {
             1754506F727461626C654E6574776F726B47726170686963CA32000089504E47
@@ -1731,7 +1740,6 @@ object Main: TMain
         end
       end
       object lsProfiles: TListBox
-        BorderSpacing.OnChange = nil
         Font.Height = -13
         OnClick = lsProfilesClick
         TabOrder = 1
@@ -1743,6 +1751,7 @@ object Main: TMain
       end
       object cmdRefresh: TButton
         Anchors = [akTop, akRight]
+        BorderSpacing.OnChange = nil
         BorderSpacing.InnerBorder = 2
         Caption = 'Aktualisieren'
         OnClick = cmdRefreshClick
@@ -1753,7 +1762,6 @@ object Main: TMain
         Width = 105
       end
       object fraBackupfile: TGroupBox
-        BorderSpacing.OnChange = nil
         Caption = 'Ausgabedatei'
         ClientHeight = 21
         ClientWidth = 264
@@ -1765,7 +1773,6 @@ object Main: TMain
         Width = 268
         object lblBackupFile: TLabel
           AutoSize = False
-          BorderSpacing.OnChange = nil
           Caption = '...'
           Color = clNone
           Font.Height = -13
@@ -1775,7 +1782,6 @@ object Main: TMain
           Width = 228
         end
         object cmdSelBackupFile: TSpeedButton
-          BorderSpacing.OnChange = nil
           Glyph.Data = {
             36030000424D3603000000000000360000002800000010000000100000000100
             1800000000000001000064000000640000000000000000000000FFFFFFFFFFFF
@@ -1823,7 +1829,6 @@ object Main: TMain
       Width = 446
       object panLeft3: TPanel
         Align = alLeft
-        BorderSpacing.OnChange = nil
         BevelInner = bvSpace
         BevelOuter = bvSpace
         ClientHeight = 306
@@ -1834,7 +1839,6 @@ object Main: TMain
         Width = 154
         object imgLeft3: TImage
           Align = alClient
-          BorderSpacing.OnChange = nil
           Center = True
           Picture.Data = {
             1754506F727461626C654E6574776F726B47726170686963CA32000089504E47
@@ -2255,7 +2259,6 @@ object Main: TMain
         end
       end
       object mLog: TMemo
-        BorderSpacing.OnChange = nil
         Color = 14342874
         Font.Height = -13
         ReadOnly = True

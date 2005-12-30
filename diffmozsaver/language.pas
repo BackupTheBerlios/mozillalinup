@@ -2,8 +2,18 @@
   Project:   DiffMozSaver
   Unit:      language
 
-  Copyright: 2005 - 2006 by Different4All GbR
-  Author:    Written by Andre Hauke
+  Author:    Andre Hauke
+
+  This file is part of DiffMozSaver.
+  Copyright (c) 2004-2006 by Different4All GbR.
+
+  See the file COPYING.GPL, included in this distribution,
+  for details about the copyright.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 
   History:
 }
