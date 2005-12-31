@@ -3,15 +3,12 @@ program DiffMozSaver;
 {$mode Delphi}{$H+}
 
 uses
-  Interfaces, // this includes the LCL widgetset
-  Forms
-  { add your units here }, frmMain, apphandler, backuphandler, frmPassDlg,
-  language;
+ Interfaces, Forms, frmMain, apphandler,
+ backuphandler, frmPassDlg,  language, frmPrefEditor;
 
 begin
-  Application.Title:='DiffMozSaver';
-  Application.Initialize;
-  Application.CreateForm(TMain, Main);
-  Application.Run;
+ Application.Title:='DiffMozSaver';
+ Application.Initialize;
+ Application.CreateForm(TMain, Main);
+ Application.Run;
 end.
-

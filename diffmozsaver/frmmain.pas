@@ -26,7 +26,8 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  Buttons, StdCtrls, apphandler, backuphandler, ComCtrls, frmPassDlg, language;
+  Buttons, StdCtrls, apphandler, backuphandler, ComCtrls, frmPassDlg, language,
+  frmPrefEditor;
 
 type
 
@@ -428,6 +429,8 @@ case fraAction.ItemIndex of
         RestoreBackup.RestoreBackup(sTemp[0],lblBackupfile.Caption,
         AppHandling.AppNameToAppType(lsSupportedApps.
         Items[lsSupportedApps.ItemIndex]),mLog);
+        // Preferenzen editieren
+        PrefEditor.Show(IncludeTrailingPathDelimiter(sTemp[0])+'prefs.js');
         break;
        end;
      end;

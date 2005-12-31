@@ -10,36 +10,33 @@
       <Title Value="DiffMozSaver"/>
       <ActiveEditorIndexAtStart Value="1"/>
     </General>
-    <Units Count="52">
+    <Units Count="56">
       <Unit0>
-        <CursorPos X="40" Y="12"/>
+        <CursorPos X="2" Y="7"/>
         <Filename Value="diffmozsaver.lpr"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="1"/>
-        <UnitName Value="DiffMozSaver"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="71"/>
       </Unit0>
       <Unit1>
-        <CursorPos X="1" Y="4"/>
+        <CursorPos X="33" Y="432"/>
         <EditorIndex Value="0"/>
         <Filename Value="frmmain.pas"/>
         <ComponentName Value="Main"/>
         <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
         <ResourceFilename Value="frmmain.lrs"/>
-        <TopLine Value="1"/>
+        <TopLine Value="416"/>
         <UnitName Value="frmMain"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="71"/>
       </Unit1>
       <Unit2>
-        <CursorPos X="16" Y="250"/>
-        <EditorIndex Value="1"/>
+        <CursorPos X="27" Y="6"/>
         <Filename Value="apphandler.pas"/>
         <IsPartOfProject Value="True"/>
-        <Loaded Value="True"/>
-        <TopLine Value="262"/>
+        <TopLine Value="1"/>
         <UnitName Value="apphandler"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="71"/>
       </Unit2>
       <Unit3>
         <CursorPos X="1" Y="1"/>
@@ -88,7 +85,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="1"/>
         <UnitName Value="backuphandler"/>
-        <UsageCount Value="62"/>
+        <UsageCount Value="66"/>
       </Unit9>
       <Unit10>
         <CursorPos X="31" Y="24"/>
@@ -347,31 +344,29 @@
         <ResourceFilename Value="frmpassdlg.lrs"/>
         <TopLine Value="1"/>
         <UnitName Value="frmPassDlg"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="39"/>
       </Unit46>
       <Unit47>
-        <CursorPos X="11" Y="18"/>
+        <CursorPos X="1" Y="1"/>
         <Filename Value="language.pas"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="1"/>
         <UnitName Value="language"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="35"/>
       </Unit47>
       <Unit48>
-        <CursorPos X="3" Y="201"/>
+        <CursorPos X="19" Y="67"/>
         <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\objpas\sysutils\sysutilh.inc"/>
-        <TopLine Value="189"/>
+        <TopLine Value="54"/>
         <UsageCount Value="10"/>
       </Unit48>
       <Unit49>
         <CursorPos X="8" Y="160"/>
-        <EditorIndex Value="2"/>
         <Filename Value="functions.pas"/>
         <IsPartOfProject Value="True"/>
-        <Loaded Value="True"/>
         <TopLine Value="142"/>
         <UnitName Value="functions"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="30"/>
       </Unit49>
       <Unit50>
         <CursorPos X="3" Y="59"/>
@@ -386,6 +381,41 @@
         <UnitName Value="sysutils"/>
         <UsageCount Value="10"/>
       </Unit51>
+      <Unit52>
+        <CursorPos X="10" Y="32"/>
+        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\objpas\sysutils\finah.inc"/>
+        <TopLine Value="20"/>
+        <UsageCount Value="10"/>
+      </Unit52>
+      <Unit53>
+        <CursorPos X="19" Y="49"/>
+        <EditorIndex Value="2"/>
+        <Filename Value="mozprefparser.pas"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <TopLine Value="1"/>
+        <UnitName Value="mozprefparser"/>
+        <UsageCount Value="23"/>
+      </Unit53>
+      <Unit54>
+        <CursorPos X="10" Y="94"/>
+        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\objpas\strutils.pp"/>
+        <TopLine Value="81"/>
+        <UnitName Value="strutils"/>
+        <UsageCount Value="10"/>
+      </Unit54>
+      <Unit55>
+        <CursorPos X="14" Y="80"/>
+        <EditorIndex Value="1"/>
+        <Filename Value="frmprefeditor.pas"/>
+        <ComponentName Value="PrefEditor"/>
+        <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
+        <ResourceFilename Value="frmprefeditor.lrs"/>
+        <TopLine Value="1"/>
+        <UnitName Value="frmPrefEditor"/>
+        <UsageCount Value="22"/>
+      </Unit55>
     </Units>
     <PublishOptions>
       <Version Value="2"/>
@@ -409,28 +439,7 @@
         <MinVersion Major="1" Valid="True"/>
       </Item2>
     </RequiredPackages>
-    <JumpHistory Count="5" HistoryIndex="4">
-      <Position1>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="204" Column="13" TopLine="195"/>
-      </Position1>
-      <Position2>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="260" Column="25" TopLine="245"/>
-      </Position2>
-      <Position3>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="94" Column="10" TopLine="82"/>
-      </Position3>
-      <Position4>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="81" Column="6" TopLine="72"/>
-      </Position4>
-      <Position5>
-        <Filename Value="apphandler.pas"/>
-        <Caret Line="196" Column="7" TopLine="190"/>
-      </Position5>
-    </JumpHistory>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="5"/>

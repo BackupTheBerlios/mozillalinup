@@ -1,0 +1,72 @@
+object PrefEditor: TPrefEditor
+  BorderStyle = bsDialog
+  Caption = 'DiffMozSaver - Pref Editor'
+  Font.Height = -12
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  Position = poOwnerFormCenter
+  ShowInTaskBar = True
+  HorzScrollBar.Page = 471
+  VertScrollBar.Page = 440
+  Left = -32000
+  Height = 441
+  Top = -32000
+  Width = 472
+  object lblInfo: TLabel
+    AutoSize = False
+    BorderSpacing.OnChange = nil
+    Caption = 'Bitte editieren Sie etwaige Änderungen.'
+    Color = clNone
+    Font.Height = -12
+    Left = 9
+    Height = 16
+    Top = 8
+    Width = 455
+  end
+  object lsEdit: TListView
+    BorderSpacing.OnChange = nil
+    Columns = <    
+      item
+        Caption = 'Name'
+        Width = 10
+      end    
+      item
+        Caption = 'Wert'
+        Width = 10
+      end>
+    RowSelect = True
+    ScrollBars = ssAutoBoth
+    ViewStyle = vsReport
+    Left = 8
+    Height = 377
+    Top = 24
+    Width = 456
+  end
+  object cmdOk: TButton
+    Anchors = [akTop, akRight]
+    BorderSpacing.OnChange = nil
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Ok'
+    Default = True
+    Font.Height = -13
+    OnClick = cmdOkClick
+    TabOrder = 1
+    Left = 248
+    Height = 30
+    Top = 406
+    Width = 105
+  end
+  object cmdAbort: TButton
+    Anchors = [akTop, akRight]
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Abbrechen'
+    Font.Height = -13
+    OnClick = cmdAbortClick
+    TabOrder = 2
+    Left = 359
+    Height = 30
+    Top = 406
+    Width = 105
+  end
+end
