@@ -24,6 +24,10 @@ unit frmMain;
 
 interface
 
+{$IfDef Win32}
+ {$R windows.res}
+{$EndIf}
+
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
   Buttons, StdCtrls, apphandler, backuphandler, ComCtrls, frmPassDlg, language,

@@ -8,27 +8,30 @@
       <IconPath Value="./"/>
       <TargetFileExt Value=".exe"/>
       <Title Value="DiffMozSaver"/>
-      <ActiveEditorIndexAtStart Value="1"/>
+      <ActiveEditorIndexAtStart Value="0"/>
     </General>
     <Units Count="58">
       <Unit0>
-        <CursorPos X="1" Y="9"/>
+        <CursorPos X="1" Y="14"/>
+        <EditorIndex Value="1"/>
         <Filename Value="diffmozsaver.lpr"/>
         <IsPartOfProject Value="True"/>
+        <Loaded Value="True"/>
         <TopLine Value="1"/>
-        <UsageCount Value="71"/>
+        <UnitName Value="DiffMozSaver"/>
+        <UsageCount Value="72"/>
       </Unit0>
       <Unit1>
-        <CursorPos X="33" Y="432"/>
+        <CursorPos X="13" Y="28"/>
         <EditorIndex Value="0"/>
         <Filename Value="frmmain.pas"/>
         <ComponentName Value="Main"/>
         <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
         <ResourceFilename Value="frmmain.lrs"/>
-        <TopLine Value="416"/>
+        <TopLine Value="13"/>
         <UnitName Value="frmMain"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="72"/>
       </Unit1>
       <Unit2>
         <CursorPos X="24" Y="63"/>
@@ -36,7 +39,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="51"/>
         <UnitName Value="apphandler"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="72"/>
       </Unit2>
       <Unit3>
         <CursorPos X="1" Y="1"/>
@@ -85,7 +88,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="269"/>
         <UnitName Value="backuphandler"/>
-        <UsageCount Value="66"/>
+        <UsageCount Value="67"/>
       </Unit9>
       <Unit10>
         <CursorPos X="31" Y="24"/>
@@ -344,7 +347,7 @@
         <ResourceFilename Value="frmpassdlg.lrs"/>
         <TopLine Value="1"/>
         <UnitName Value="frmPassDlg"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="40"/>
       </Unit46>
       <Unit47>
         <CursorPos X="1" Y="1"/>
@@ -352,7 +355,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="1"/>
         <UnitName Value="language"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="36"/>
       </Unit47>
       <Unit48>
         <CursorPos X="19" Y="67"/>
@@ -362,13 +365,13 @@
       </Unit48>
       <Unit49>
         <CursorPos X="29" Y="103"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <Filename Value="functions.pas"/>
         <IsPartOfProject Value="True"/>
         <Loaded Value="True"/>
         <TopLine Value="124"/>
         <UnitName Value="functions"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="31"/>
       </Unit49>
       <Unit50>
         <CursorPos X="3" Y="59"/>
@@ -395,7 +398,7 @@
         <IsPartOfProject Value="True"/>
         <TopLine Value="1"/>
         <UnitName Value="mozprefparser"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="24"/>
       </Unit53>
       <Unit54>
         <CursorPos X="10" Y="94"/>
@@ -412,7 +415,7 @@
         <ResourceFilename Value="frmprefeditor.lrs"/>
         <TopLine Value="1"/>
         <UnitName Value="frmPrefEditor"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit55>
       <Unit56>
         <CursorPos X="10" Y="96"/>
@@ -450,7 +453,32 @@
         <MinVersion Major="1" Valid="True"/>
       </Item2>
     </RequiredPackages>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="diffmozsaver.lpr"/>
+        <Caret Line="4" Column="13" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="diffmozsaver.lpr"/>
+        <Caret Line="15" Column="1" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="diffmozsaver.lpr"/>
+        <Caret Line="3" Column="20" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="diffmozsaver.lpr"/>
+        <Caret Line="14" Column="1" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="diffmozsaver.lpr"/>
+        <Caret Line="5" Column="17" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="diffmozsaver.lpr"/>
+        <Caret Line="14" Column="1" TopLine="1"/>
+      </Position6>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="5"/>
