@@ -10,9 +10,9 @@
       <Title Value="DiffMozSaver"/>
       <ActiveEditorIndexAtStart Value="1"/>
     </General>
-    <Units Count="56">
+    <Units Count="58">
       <Unit0>
-        <CursorPos X="2" Y="7"/>
+        <CursorPos X="1" Y="9"/>
         <Filename Value="diffmozsaver.lpr"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="1"/>
@@ -31,10 +31,10 @@
         <UsageCount Value="71"/>
       </Unit1>
       <Unit2>
-        <CursorPos X="27" Y="6"/>
+        <CursorPos X="24" Y="63"/>
         <Filename Value="apphandler.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="1"/>
+        <TopLine Value="51"/>
         <UnitName Value="apphandler"/>
         <UsageCount Value="71"/>
       </Unit2>
@@ -80,10 +80,10 @@
         <UsageCount Value="7"/>
       </Unit8>
       <Unit9>
-        <CursorPos X="11" Y="18"/>
+        <CursorPos X="51" Y="280"/>
         <Filename Value="backuphandler.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="1"/>
+        <TopLine Value="269"/>
         <UnitName Value="backuphandler"/>
         <UsageCount Value="66"/>
       </Unit9>
@@ -361,10 +361,12 @@
         <UsageCount Value="10"/>
       </Unit48>
       <Unit49>
-        <CursorPos X="8" Y="160"/>
+        <CursorPos X="29" Y="103"/>
+        <EditorIndex Value="1"/>
         <Filename Value="functions.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="142"/>
+        <Loaded Value="True"/>
+        <TopLine Value="124"/>
         <UnitName Value="functions"/>
         <UsageCount Value="30"/>
       </Unit49>
@@ -389,10 +391,8 @@
       </Unit52>
       <Unit53>
         <CursorPos X="19" Y="49"/>
-        <EditorIndex Value="2"/>
         <Filename Value="mozprefparser.pas"/>
         <IsPartOfProject Value="True"/>
-        <Loaded Value="True"/>
         <TopLine Value="1"/>
         <UnitName Value="mozprefparser"/>
         <UsageCount Value="23"/>
@@ -406,16 +406,27 @@
       </Unit54>
       <Unit55>
         <CursorPos X="14" Y="80"/>
-        <EditorIndex Value="1"/>
         <Filename Value="frmprefeditor.pas"/>
         <ComponentName Value="PrefEditor"/>
         <IsPartOfProject Value="True"/>
-        <Loaded Value="True"/>
         <ResourceFilename Value="frmprefeditor.lrs"/>
         <TopLine Value="1"/>
         <UnitName Value="frmPrefEditor"/>
         <UsageCount Value="22"/>
       </Unit55>
+      <Unit56>
+        <CursorPos X="10" Y="96"/>
+        <Filename Value="C:\Programme\3dpack\lazarus\lcl\FileUtil.pas"/>
+        <TopLine Value="84"/>
+        <UnitName Value="FileUtil"/>
+        <UsageCount Value="10"/>
+      </Unit56>
+      <Unit57>
+        <CursorPos X="10" Y="34"/>
+        <Filename Value="C:\Programme\3dpack\lazarus\fpcsrc\rtl\objpas\sysutils\osutilsh.inc"/>
+        <TopLine Value="22"/>
+        <UsageCount Value="10"/>
+      </Unit57>
     </Units>
     <PublishOptions>
       <Version Value="2"/>

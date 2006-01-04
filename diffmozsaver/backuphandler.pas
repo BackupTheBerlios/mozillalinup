@@ -25,7 +25,7 @@ unit backuphandler;
 interface
 
 uses
-  Classes, SysUtils, Dialogs, ComCtrls, Process, StdCtrls, Controls,
+  Classes, SysUtils, Dialogs, ComCtrls, Process, StdCtrls, Controls, FileUtil,
   apphandler, AbUnzper, AbArcTyp, language;
 
   type
@@ -278,8 +278,8 @@ var
 begin
 // Kopieren
 Log.Lines.Add(LanguageHandling.GetStatusMSG('1'));
-sTempFile:=ChangeFileExt(GetTempFileName,'.zip');
-CopyFile(sFile,sTempFile);
+sTempFile:=ChangeFileExt(GetTempFileName(GetTempDir,'.zip'),'.zip');
+CopyFile(sFile,sTempFile,false);
 // Entpacken
 Log.Lines.Add(LanguageHandling.GetStatusMSG('4'));
 Zip.BaseDirectory:=RestoreDir;

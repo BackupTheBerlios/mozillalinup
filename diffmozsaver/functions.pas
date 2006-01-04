@@ -25,7 +25,7 @@ unit functions;
 interface
 
 uses
-  Classes, SysUtils, Dialogs;
+  Classes, SysUtils, Dialogs, FileUtil;
 
  procedure GetDirs(const Directory: string; var Files: TStringList;
   const FileMask: string = '*.*'; const SubFolders: Boolean = False);
@@ -33,7 +33,6 @@ uses
   const FileMask: string = '*.*'; const SubFolders: Boolean = False);
  procedure GetFiles(const Directory: string; var Files: TStringList;
   const FileMask: string = '*.*';  const SubFolders: Boolean = False);
- procedure CopyFile(filename, newfilename: String);
  procedure CopyDir(OldDir, NewDir: String);
  
 implementation
@@ -168,25 +167,6 @@ begin
       SysUtils.FindClose(SearchRec);
      end;
   end;
- end;
-end;
-
-// Datei Kopieren
-procedure CopyFile(filename, newfilename: String);
-var
- oldfile, newfile: TFilestream;
-begin
- oldfile:=TFileStream.Create(filename, fmOpenRead);
- try
-  oldfile.Position:=0;
-  newfile:=TFileStream.Create(newfilename, fmCreate);
-  try
-   newfile.CopyFrom(oldfile,oldfile.size);
-  finally
-   newfile.free;
-  end;
- finally
-  oldfile.free;
  end;
 end;
 
